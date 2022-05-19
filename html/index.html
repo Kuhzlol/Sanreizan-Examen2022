@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanreizan</title>
+    <link rel="icon" href= "../images/Fujisan.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container" id="top">
+        <header>
+            <a href="https://github.com/Kuhzlol" class="medaillon-link"><img src="../images/me.jpg" id="medaillon" alt="Romain Ledda"></a>
+            <div class="video-container">
+                <video loop autoplay muted>
+                    <source src="../medias/video-back.mp4" type="video/mp4">
+                    <source src="../medias/video-back.webm" type="video/webm">
+                </video>
+            </div>
+            <a class="logo-link" href="./index.html"><h1>Sanreizan</h1></a>
+        </header>
+        <nav class="navbar">
+            
+            <ul class="nav-links">
+                <li><a href="./index.html">HOME</a></li>
+                <li class="deroulant">
+                    <a href="#">SANREIZAN</a>
+                    <ul class="sanreizan-list">
+                        <li><a href="./introduction.html">Introduction</a></li>
+                        <li><a href="./fujisan.html">Fujisan</a></li>
+                        <li><a href="#">Hakusan</a></li>
+                        <li><a href="#">Tateyama</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>   
+            
+            <img src="../images/dark.png" alt="" id="icon">
+        </nav>
+        
+        <main>
+            <nav id="sidebar" class="sidebar"></nav>
+
+            <section class="content">
+
+                <div class="sanreizan-banner">
+                    <div class="sanreizan-banner-head">
+                        <img src="../images/HomePage.jpg" alt="" class="banner-logo">
+                        <h2>The Three Holy Mountains of Japan (三霊山, Sanreizan) are three mountains revered by tradition in Japan.</h2>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <a href="../html/fujisan.html">
+                        <div class="card">
+                            <div class="card-head">
+                                <img src="../images/hakkai-fuji.jpg" alt="">
+                                <h3 class="bg-var">Fujisan</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Mount Fuji (富士山, Fujisan) located on the island of Honshū, about 100 km southwest of Tokyo, is the highest mountain in Japan.</p>
+                                <ul>
+                                    <li>Etymology</li>
+                                    <li>History</li>
+                                    <li>Geography</li>
+                                    <li>Geology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img src="../images/Mount-Haku.jpg" alt="">
+                                <h3 class="bg-var">Hakusan</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Mount Haku (白山, Hakusan) is a dormant stratovolcano in Japan. It is located on the borders of Gifu and Ishikawa, on the island of Honshu.</p>
+                                <ul>
+                                    <li>Etymology</li>
+                                    <li>History</li>
+                                    <li>Geography</li>
+                                    <li>Geology</li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img src="../images/Mount-Tate.jpg" alt="">
+                                <h3 class="bg-var">Tateyama</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Mount Tate (立山, Tateyama) is a mountain located in the southeastern area of Toyama. It is one of Japan's Three Holy Mountains (三霊山, Sanreizan).</p>
+                                <ul>
+                                    <li>Etymology</li>
+                                    <li>History</li>
+                                    <li>Geography</li>
+                                    <li>Geology</li>
+                                </ul>
+                            </div>                           
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>&copy; Examen HTML/CSS - Romain Ledda - 2022</footer>
+    </div>
+    <script>
+        function darkmode()
+        {
+            var icon = document.getElementById("icon");
+
+            if (localStorage.getItem("theme") == null){
+                localStorage.setItem("theme", "light");
+            }
+
+            let localData = localStorage.getItem("theme");
+
+            if (localData == "light") {
+                icon.src = "../images/dark.png";
+                document.body.classList.remove("dark-theme");
+            } 
+            else if (localData == "dark"){
+                icon.src = "../images/light.png";
+                document.body.classList.add("dark-theme");
+            }
+
+
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+                if (document.body.classList.contains("dark-theme")){
+                    icon.src = "../images/light.png";
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    icon.src = "../images/dark.png";
+                    localStorage.setItem("theme", "light");
+                }
+            }
+
+        }
+        window.onload = darkmode; 
+    </script>
+</body>
+</html>

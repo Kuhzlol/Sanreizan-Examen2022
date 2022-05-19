@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="icon" href= "../images/Fujisan.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="https://github.com/Kuhzlol" class="medaillon-link"><img src="../images/me.jpg" id="medaillon" alt="Romain Ledda"></a>
+            <div class="video-container">
+                <video loop autoplay muted>
+                    <source src="../medias/video-back.mp4" type="video/mp4">
+                    <source src="../medias/video-back.webm" type="video/webm">
+                </video>
+            </div>
+            <a class="logo-link" href="./index.html"><h1>Sanreizan</h1></a>
+        </header>
+        <nav class="navbar">
+            <div id="hamburger-icon" onclick="changeIcon()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="./index.html">HOME</a></li>
+                <li class="deroulant">
+                    <a href="#">SANREIZAN</a>
+                    <ul class="sanreizan-list">
+                        <li><a href="./introduction.html">Introduction</a></li>
+                        <li><a href="./fujisan.html">Fujisan</a></li>
+                        <li><a href="#">Hakusan</a></li>
+                        <li><a href="#">Tateyama</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>  
+            
+            <img src="../images/dark.png" alt="" id="icon">
+        </nav>
+        
+        <main>
+            <nav id="sidebar" class="sidebar">
+                <ul id="side-list">
+                    <li><a href="#t1" onclick="toggle('t1')">1. Volcanic Power: Fujisan</a></li>
+                    <li><a href="#t2" onclick="toggle('t2')">2. Power of Water: Hakusan</a></li>
+                    <li><a href="#t3" onclick="toggle('t3')">3. Power of the Spirits of the Dead: Tateyama</a></li>
+                </ul>
+            </nav>
+
+            <section class="content">
+
+                <div class="sanreizan-banner">
+                    <div class="sanreizan-banner-head">
+                        <img src="../images/HomePage.jpg" alt="" class="banner-logo">
+                        <h2>Sanreizan: Introduction</h2>  
+                    </div>
+                </div>
+
+                <details open>
+                    <summary id="t1"><a href="#t1">Volcanic Power: Fujisan</a></summary>
+                    <h3>
+                        <ul>
+                            <li>Height: 3776.24m</li>
+                            <li>Location: Shizuoka and Yamanashi prefectures</li>
+                            <li>Last erupted: Dec 16, 1707</li>
+                        </ul>
+                    </h3>
+                    <p>Known for: Being the highest point in Japan, and is hence also very commercialized. Also known for being on various woodblock prints. There are 4 trails of varying difficulties to the summit; overnight climbs to catch the sunrise are very popular.</p>
+                    <p>Season: July to September</p>
+                </details>
+                
+                <details>
+                    <summary id="t2"><a href="#t2">Power of Water: Hakusan</a></summary>
+                    <h3>
+                        <ul>
+                            <li>Height: 2702.14m</li>
+                            <li>Location: Gifu, Fukui and Ishikawa prefectures</li>
+                            <li>Last erupted: 1659</li>
+                        </ul>
+                    </h3>
+                    <p>Known for: Skiing and snowboarding, as well as being white from snow, hence the name Haku which means white. It remains snow-capped even when the surrounding peaks have changed colour. Mt. Haku was first scaled in 717 by Shintoist Taicho, and has since then attracted many worshippers. Hakusan National Park has few hiking trails and maintains a plethora of flora and fauna due to minimal human contact. There are numerous alpine plants which were discovered there. The Hakusan White Road, formerly known as the Hakusan Super Rindo 林道, is a 33.3km long winding scenic route that offers panoramic views of mountains and waterfalls. There is even a hot spring lookout point! The end point is the UNESCO World Heritage site, Shirakawago 白川郷. Besides the raicho, Ishikawa’s prefectural bird, the golden eagle, also resides on the mountain.</p>
+                    <p>Season: May to October. Peak is during July to August, which coincides with the summer vacation. The best time to view the autumn foliage or kouyou 紅葉 is October to November.</p>
+                    
+                </details>
+            
+                <details>
+                    <summary id="t3"><a href="#t3">Power of the Spirits of the Dead: Tateyama</a></summary>
+                    <h3>
+                        <ul>
+                            <li>Height: 3015m</li>
+                            <li>Location: Toyama prefecture</li>
+                        </ul>
+                    </h3>
+                    <p>Known for: Hot springs, or onsen 温泉, in Murododaira 室堂平, a lava plateau formed from the previous Tateyama crater. Murodo is a hall for meditation and prayers, and one was built there in the Edo period to worship the mountains.</p>
+                    <p>みくりが池 Mikurigaike, whose sacred water was used in cooking for the mountain god, is cobalt blue in June and beautifully reflects Tateyama. Raicho 雷鳥, or Rock Ptarmigan birds, also reside there. </p>
+                    <p>地獄谷 Jigokudani, or Hell Valley, has steaming clouds of volcanic eruptions looming over it. The sulfur smell is notoriously pungent and is noticeable when climbing the mountain. On the summit is Oyama Shrine, where climbers may receive blessings and warm sake from a priest. According to mountain religion, the climb to the top of Mt. Tate simulates the experience of “hell paradise” and the afterlife. One of the “hells” is the Blood Pond 血の池, which are pools in the wetlands red from high levels of iron oxide. There is also the well-known Tateyama Kurobe alpine route through the Northern Alps that is easily accessible by bus, and goes up to an elevation of 2450 meters.</p>
+                    <p>Season: April to November. Peak is in April to June, when the famed 15-20-meter snow walls, Yukino-otani 雪の大谷 may be seen.</p>
+                </details>
+            </section>
+        </main>
+        <footer>&copy; Examen HTML/CSS - Romain Ledda - 2022</footer>
+
+    </div>
+    <script>
+        function darkmode()
+        {
+            var icon = document.getElementById("icon");
+
+            if (localStorage.getItem("theme") == null){
+                localStorage.setItem("theme", "light");
+            }
+
+            let localData = localStorage.getItem("theme");
+
+            if (localData == "light") {
+                icon.src = "../images/dark.png";
+                document.body.classList.remove("dark-theme");
+            } 
+            else if (localData == "dark"){
+                icon.src = "../images/light.png";
+                document.body.classList.add("dark-theme");
+            }
+
+
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+                if (document.body.classList.contains("dark-theme")){
+                    icon.src = "../images/light.png";
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    icon.src = "../images/dark.png";
+                    localStorage.setItem("theme", "light");
+                }
+            }
+
+        }
+        window.onload = darkmode; 
+    </script>
+    
+    <script>
+        // Fetch all the details element.
+        const details = document.querySelectorAll("details");
+
+        // Add the onclick listeners.
+        details.forEach((targetDetail) => {
+            targetDetail.addEventListener("click", () => {
+                // Close all the details that are not targetDetail.
+                details.forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute("open");
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        function changeIcon() {
+            document.getElementById("hamburger-icon").classList.toggle("change");
+            
+            var maxWidthSide = document.getElementById("sidebar").style.maxWidth;
+
+            if (maxWidthSide == '0px' || maxWidthSide == ''){
+                openSide();
+            } else {
+                closeSide();
+            }
+            
+        }
+
+        function toggle(item){
+            document.getElementById(item).click();
+            
+            changeIcon();
+            
+        }
+
+        function openSide(){
+            document.getElementById("sidebar").style.maxWidth = "500px";
+        }
+
+        function closeSide(){
+            document.getElementById("sidebar").style.maxWidth = "0px";
+        }
+    </script>
+</body>
+</html>
